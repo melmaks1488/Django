@@ -12,4 +12,6 @@ urlpatterns = [
     path('article/<int:article_id>/archive', article_number_archive, name='article_number'),
     path('article/<int:article_id>/<slug:slug_text>', article_number_text, name='article_number_text'),
     path('users/<int:users_id>/', users_number, name='users_number')
+
+
 ]
