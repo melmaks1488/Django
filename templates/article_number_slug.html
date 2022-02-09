@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+
+    {% if num == 0 %}
+        <span>Chetnoe</span>
+    {% else %}
+        <span> Nechetnoe </span>
+    {% endif %}
+
+    {% include 'add.html' %}
+
+</div>
+<a href="{% url 'main' %}">Переход на страницу со случайным ID</a>
+{% endblock %}
