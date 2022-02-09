@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="padding: 20px; background-color: red"> User!</div>
+<a href="{% url 'main_acricles' %}">To the USER page</a>
+{% include 'add.html' %}
+{% endblock %}

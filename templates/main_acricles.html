@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="padding: 20px; background-color: red"> main_acricles!</div>
+<a href="{% url 'main_acricles' %}">To the acricles page</a>
+{% include 'add.html' %}
+{% endblock %}
